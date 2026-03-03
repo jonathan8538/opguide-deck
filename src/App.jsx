@@ -188,7 +188,7 @@ function VideoPlayer() {
       >
         <div className="relative rounded-2xl overflow-hidden video-shadow cursor-pointer" onClick={togglePlay}>
           <div className="overflow-hidden" style={{ margin: '-3% 3% -3% 0' }}>
-            <video ref={videoRef} src="../vid/0303.mp4" muted playsInline preload="metadata"
+            <video ref={videoRef} src="vid/0303.mp4" muted playsInline preload="metadata"
               className="w-full block" />
           </div>
 
