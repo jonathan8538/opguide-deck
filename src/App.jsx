@@ -122,13 +122,7 @@ function VideoPlayer() {
   const [showUI, setShowUI] = useState(true);
   useEffect(() => () => clearTimeout(hideTimer.current), []);
 
-  // Auto-play on mount
-  useEffect(() => {
-    const v = videoRef.current;
-    if (!v) return;
-    v.muted = true;
-    v.play().then(() => setPlaying(true)).catch(() => {});
-  }, []);
+
 
   // Sync progress
   useEffect(() => {
@@ -195,7 +189,7 @@ function VideoPlayer() {
 
           {/* Controls bar */}
           <AnimatePresence>
-            {showUI && !playing && (
+            {!playing && (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}
                 className="absolute inset-0 flex items-center justify-center"
                 style={{ background: "rgba(0,0,0,0.35)" }}>
