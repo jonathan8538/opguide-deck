@@ -126,6 +126,7 @@ function VideoPlayer() {
   useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
+    v.muted = true;
     v.play().then(() => setPlaying(true)).catch(() => {});
   }, []);
 
