@@ -6,8 +6,8 @@ import { Play, Pause, MessageSquare, Search, FileText, ChevronLeft, ChevronRight
 const RED = "#E8192C";
 
 const steps = [
-  { id: 1, icon: MessageSquare, label: "The Ask",       sub: "User queries harvest policy" },
-  { id: 2, icon: Search,        label: "The Retrieval", sub: "RAG engine fetches internal docs" },
+  { id: 1, icon: MessageSquare, label: "The Ask",       sub: "User queries planting SOPs" },
+  { id: 2, icon: Search,        label: "The Retrieval", sub: "RAG engine fetches upstream guidebook" },
   { id: 3, icon: FileText,      label: "The Result",    sub: "AI answers with citations & preview" },
 ];
 
